@@ -11,15 +11,21 @@
 		7933D0141DEBF00D00256C21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7933D0121DEBF00D00256C21 /* Main.storyboard */; };
 		7933D0161DEBF00E00256C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7933D0151DEBF00E00256C21 /* Assets.xcassets */; };
 		7933D0191DEBF00E00256C21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7933D0171DEBF00E00256C21 /* LaunchScreen.storyboard */; };
+		7933D0231DEBF40C00256C21 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7933D0221DEBF40C00256C21 /* GoogleService-Info.plist */; };
+		CB36E2817C94B0855A20AF73 /* Pods_ReservationsFirebaseS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3087EBAD4C431FF278A2E71B /* Pods_ReservationsFirebaseS3.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3087EBAD4C431FF278A2E71B /* Pods_ReservationsFirebaseS3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReservationsFirebaseS3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7933D00B1DEBF00D00256C21 /* ReservationsFirebaseS3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReservationsFirebaseS3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7933D00E1DEBF00D00256C21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7933D0131DEBF00D00256C21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7933D0151DEBF00E00256C21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7933D0181DEBF00E00256C21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7933D01A1DEBF00E00256C21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7933D0221DEBF40C00256C21 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A8519E99D5B9D1BDD2542F04 /* Pods-ReservationsFirebaseS3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReservationsFirebaseS3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReservationsFirebaseS3/Pods-ReservationsFirebaseS3.debug.xcconfig"; sourceTree = "<group>"; };
+		AC616D0A4785D9EEC0053049 /* Pods-ReservationsFirebaseS3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReservationsFirebaseS3.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReservationsFirebaseS3/Pods-ReservationsFirebaseS3.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB36E2817C94B0855A20AF73 /* Pods_ReservationsFirebaseS3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F4EB22FDF88C922689D72CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3087EBAD4C431FF278A2E71B /* Pods_ReservationsFirebaseS3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55862AB71629CA29DC4622C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8519E99D5B9D1BDD2542F04 /* Pods-ReservationsFirebaseS3.debug.xcconfig */,
+				AC616D0A4785D9EEC0053049 /* Pods-ReservationsFirebaseS3.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7933D0021DEBF00D00256C21 = {
 			isa = PBXGroup;
 			children = (
 				7933D00D1DEBF00D00256C21 /* ReservationsFirebaseS3 */,
 				7933D00C1DEBF00D00256C21 /* Products */,
+				7933D0221DEBF40C00256C21 /* GoogleService-Info.plist */,
+				55862AB71629CA29DC4622C6 /* Pods */,
+				3F4EB22FDF88C922689D72CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7933D01D1DEBF00E00256C21 /* Build configuration list for PBXNativeTarget "ReservationsFirebaseS3" */;
 			buildPhases = (
+				02C191060A15240838ACDD70 /* [CP] Check Pods Manifest.lock */,
 				7933D0071DEBF00D00256C21 /* Sources */,
 				7933D0081DEBF00D00256C21 /* Frameworks */,
 				7933D0091DEBF00D00256C21 /* Resources */,
+				B777C7D6A042884293B17DA7 /* [CP] Embed Pods Frameworks */,
+				8E4476EE9FB2EB9728DD5527 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,12 +152,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				7933D0191DEBF00E00256C21 /* LaunchScreen.storyboard in Resources */,
+				7933D0231DEBF40C00256C21 /* GoogleService-Info.plist in Resources */,
 				7933D0161DEBF00E00256C21 /* Assets.xcassets in Resources */,
 				7933D0141DEBF00D00256C21 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02C191060A15240838ACDD70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E4476EE9FB2EB9728DD5527 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReservationsFirebaseS3/Pods-ReservationsFirebaseS3-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B777C7D6A042884293B17DA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReservationsFirebaseS3/Pods-ReservationsFirebaseS3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7933D0071DEBF00D00256C21 /* Sources */ = {
@@ -255,6 +334,7 @@
 		};
 		7933D01E1DEBF00E00256C21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8519E99D5B9D1BDD2542F04 /* Pods-ReservationsFirebaseS3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QGUMN7L9G3;
@@ -268,6 +348,7 @@
 		};
 		7933D01F1DEBF00E00256C21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC616D0A4785D9EEC0053049 /* Pods-ReservationsFirebaseS3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QGUMN7L9G3;
@@ -298,6 +379,7 @@
 				7933D01F1DEBF00E00256C21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
