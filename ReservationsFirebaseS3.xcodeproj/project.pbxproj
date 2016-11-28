@@ -12,6 +12,9 @@
 		7933D0161DEBF00E00256C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7933D0151DEBF00E00256C21 /* Assets.xcassets */; };
 		7933D0191DEBF00E00256C21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7933D0171DEBF00E00256C21 /* LaunchScreen.storyboard */; };
 		7933D0231DEBF40C00256C21 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7933D0221DEBF40C00256C21 /* GoogleService-Info.plist */; };
+		7933D0251DEBF64400256C21 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7933D0241DEBF64400256C21 /* Reservation.swift */; };
+		7933D0271DEBF68D00256C21 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7933D0261DEBF68D00256C21 /* FirebaseController.swift */; };
+		7933D0291DEBF6BD00256C21 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7933D0281DEBF6BD00256C21 /* User.swift */; };
 		CB36E2817C94B0855A20AF73 /* Pods_ReservationsFirebaseS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3087EBAD4C431FF278A2E71B /* Pods_ReservationsFirebaseS3.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +27,9 @@
 		7933D0181DEBF00E00256C21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7933D01A1DEBF00E00256C21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7933D0221DEBF40C00256C21 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7933D0241DEBF64400256C21 /* Reservation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
+		7933D0261DEBF68D00256C21 /* FirebaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
+		7933D0281DEBF6BD00256C21 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A8519E99D5B9D1BDD2542F04 /* Pods-ReservationsFirebaseS3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReservationsFirebaseS3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReservationsFirebaseS3/Pods-ReservationsFirebaseS3.debug.xcconfig"; sourceTree = "<group>"; };
 		AC616D0A4785D9EEC0053049 /* Pods-ReservationsFirebaseS3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReservationsFirebaseS3.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReservationsFirebaseS3/Pods-ReservationsFirebaseS3.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +87,9 @@
 			children = (
 				7933D00E1DEBF00D00256C21 /* AppDelegate.swift */,
 				7933D0121DEBF00D00256C21 /* Main.storyboard */,
+				7933D0241DEBF64400256C21 /* Reservation.swift */,
+				7933D0281DEBF6BD00256C21 /* User.swift */,
+				7933D0261DEBF68D00256C21 /* FirebaseController.swift */,
 				7933D0151DEBF00E00256C21 /* Assets.xcassets */,
 				7933D0171DEBF00E00256C21 /* LaunchScreen.storyboard */,
 				7933D01A1DEBF00E00256C21 /* Info.plist */,
@@ -213,6 +222,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7933D0291DEBF6BD00256C21 /* User.swift in Sources */,
+				7933D0271DEBF68D00256C21 /* FirebaseController.swift in Sources */,
+				7933D0251DEBF64400256C21 /* Reservation.swift in Sources */,
 				7933D00F1DEBF00D00256C21 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
